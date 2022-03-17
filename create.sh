@@ -12,5 +12,5 @@ if [[ -e "$filename".py ]]; then
 else
 	touch "$filename".py
 	echo $'# Ajay Bhatia\n# '"$filename"$'\n# '"$description"$'\n\n\n\nif __name__ == \"__main__\":\n\t' > "$filename.py"
-	vim "$filename".py
+	vi "$filename".py
 fi
